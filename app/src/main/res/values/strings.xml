@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DicodingJetPack</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="total_discount">Discount</string>
+    <string name="calculate">Calculate</string>
+    <string name="fixed_price">Fixed Price</string>
 </resources>
