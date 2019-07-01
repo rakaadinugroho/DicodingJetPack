@@ -2,6 +2,7 @@ package com.rakaadinugroho.dicodingjetpack.calculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import com.rakaadinugroho.dicodingjetpack.R
 import kotlinx.android.synthetic.main.activity_calculator.*
@@ -16,10 +17,11 @@ class CalculatorActivity : AppCompatActivity() {
             .of(this)
             .get(CalculatorVM::class.java)
 
-        val amount = ammount.text.toString()
-        val disc = discount.text.toString()
+
 
         calculate.setOnClickListener {
+            val amount = ammount.text.toString()
+            val disc = discount.text.toString()
             when {
                 amount.isEmpty() -> ammount.error = "please fill"
                 disc.isEmpty() -> discount.error = "please fill"
